@@ -1,0 +1,6 @@
+.test{
+    height: 100vh;
+    background-image: url(https://pogg.imgix.net/wp-content/themes/pogg/assets/images/index/slide/slide_b.jpg?q=65&fit=clip&auto=format&lossless=0&w=1300);
+    background-size: cover;
+    background-position: center;
+}

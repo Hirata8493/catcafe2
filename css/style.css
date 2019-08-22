@@ -333,7 +333,7 @@ ul {
 .slide {
     position: relative;
     width: 90vw;
-    height: 90vh;
+    height: 60vh;
     margin: 0 auto;
     overflow: hidden;
     text-align: center;
@@ -344,7 +344,7 @@ ul {
     position: absolute;
     top: 0;
     right: 0;
-    left: -50%;
+    left: 0;
     bottom: 0;
     margin: 0 auto;
     height: auto;
@@ -359,7 +359,7 @@ ul {
     object-fit: fill;
     animation: none;
     
-    left: -80%;
+    left: 0;
 }
 
 @keyframes slide-1 {
@@ -951,18 +951,18 @@ footer {
         top: -50px;
     }
     .slide {
-        width: 70vw;
-        height: 70vh;
+        width: 80vw;
+        height: 80vh;
     }
-    .slide-img {
+    /* .slide-img {
         position: absolute;
         margin: 0;
         top: 0;
         right: 0;
-        left: -30%;
+        left: 0;
         bottom: 0;
+        height: 100%;
         
-        height: auto;
     }
     .video {
         position: absolute;
@@ -970,28 +970,23 @@ footer {
         right: 0;
         left: -80%;
         bottom: 0;
-    } 
+    }  */
 }
 
-@media screen and (min-width:880px) {
+/* @media screen and (min-width:880px) {
     .slide {
-        width: 70vw;
+        width: 50vw;
         height: 500px;
     }
     .slide-img {
         top: 0;
         left: 0;
-        width: 130%;
+        height: 100%;
         
     }
    
-}
-@media screen and (min-width:1200px) {
-    .slide-img {
-        top: -30%;
-    }
-    .video{
-        top: 0;
-        height: none;
-    }
+} */
+@media screen and (min-width:1060px) {
+    
+    
 }

@@ -1,6 +1,57 @@
-.test{
+.slide-content{
+    position: relative;
     height: 100vh;
-    background-image: url(https://pogg.imgix.net/wp-content/themes/pogg/assets/images/index/slide/slide_b.jpg?q=65&fit=clip&auto=format&lossless=0&w=1300);
+}
+.slide-wrap{
+    background-color: aquamarine;
+    height: 80vh;
+    width: 80vw;
+    overflow: hidden;
+    position: absolute;
+    top:10%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: relative;
+}
+.slide-img{
+    position: absolute;
+    height: 100%;
+    width: 100vw;
     background-size: cover;
     background-position: center;
+    animation-name: slide-1;
+    animation-duration: 2s;
+}
+.slide-1{
+    background-image: url(images/animal-339400_1280.jpg);
+}
+.slide-2{
+    background-image: url(images/kitten-1031261_1280.jpg);
+}
+.slide-3{
+    background-image: url(images/animal-2178983_1280.jpg);
+}
+.video {
+    animation: none;
+    object-fit: cover;
+}
+@keyframes slide-1 {
+    from {
+        transform: translate3d(0, 0, 0);
+        
+    }
+    to {
+        transform: translate3d(-10%, 0, 0);
+    }
+}
+@media screen and (min-width:820px) {
+    
+        .slide-img{
+            width: 90vw;
+        }
+    
+}
+@media screen and (min-width:1050px) {
+    
 }

@@ -324,44 +324,51 @@ ul {
 .wrap-1 {
     height: auto;
     widows: 90vw;
-    text-align: center;
     font-family: 'Libre Caslon Display', serif;
 }
-
-/*スライドする複数イメージをぴったりと重ねます*/
-
-.slide {
-    position: relative;
-    width: 90vw;
-    height: 60vh;
-    margin: 0 auto;
-    overflow: hidden;
+.top-text{
     text-align: center;
+    margin: 2% 0;
+}
+/*スライドする複数イメージをぴったりと重ねます*/
+.slide-content{
+    position: relative;
+    height: auto;
+}
+.slide-wrap{
+    height: 80vh;
+    width: 80vw;
+    overflow: hidden;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: relative;
     border: 1px solid dimgray;
 }
-
-.slide-img {
+.slide-img{
     position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin: 0 auto;
-    height: auto;
-    display: none;
+    height: 100%;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
     animation-name: slide-1;
     animation-duration: 7s;
-    
-    height: 100%;
 }
-
+.slide-1{
+    background-image: url(../images/animal-339400_1280.jpg);
+}
+.slide-2{
+    background-image: url(../images/kitten-1031261_1280.jpg);
+}
+.slide-3{
+    background-image: url(../images/animal-2178983_1280.jpg);
+}
 .video {
-    object-fit: fill;
     animation: none;
-    
-    left: 0;
+    object-fit: cover;
 }
-
 @keyframes slide-1 {
     from {
         transform: translate3d(0, 0, 0);
@@ -370,6 +377,13 @@ ul {
     to {
         transform: translate3d(-10%, 0, 0);
     }
+}
+@media screen and (min-width:820px) {
+    
+        .slide-img{
+            width: 90vw;
+        }
+    
 }
 
 .wrap-2 {
@@ -950,43 +964,7 @@ footer {
         width: 30%;
         top: -50px;
     }
-    .slide {
-        width: 80vw;
-        height: 80vh;
-    }
-    /* .slide-img {
-        position: absolute;
-        margin: 0;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        height: 100%;
-        
-    }
-    .video {
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: -80%;
-        bottom: 0;
-    }  */
+    
+    
 }
 
-/* @media screen and (min-width:880px) {
-    .slide {
-        width: 50vw;
-        height: 500px;
-    }
-    .slide-img {
-        top: 0;
-        left: 0;
-        height: 100%;
-        
-    }
-   
-} */
-@media screen and (min-width:1060px) {
-    
-    
-}

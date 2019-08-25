@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>CatCafe2</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css?201908251523=" rel="stylesheet">
     <script type="text/javascript" src="js/sample.js" defer></script>
     <script src="https://kit.fontawesome.com/65cca3b56e.js"></script>
     <link href="favicon.ico" rel="shortcut icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -34,46 +35,51 @@
         </div>
     </header>
     <div class="button" href="#">
-            <a class="menu-trigger" href="javascript:void(0)">
+        <a class="menu-trigger" href="javascript:void(0)">
             <span></span>
             <span></span>
             <span></span>
         </a>
     </div>
-    <div id="nav-color" class="nav-color"></div>
-    <nav class="nav-wrap" id="nav-main">
-        
+    <div id="nav-color" class="nav-color paw-box"></div>
+    <nav class="nav-wrap paw-box" id="nav-main">
+
         <p class="name nav-name">nemu</p>
         <ul class="nav" id="nav">
-            <li class="menu"><a href="#cat-cafe">Top</a></li>
-            <li class="menu"><a href="#cast">Cast</a></li>
-            <li class="menu"><a href="#room">Room</a></li>
-            <li class="menu"><a href="#time">Time</a></li>
-            <li class="menu"><a href="#access">Access</a></li>
+            <li class="menu"><a class="btn-6" href="#cat-cafe">Top<span></span></a></li>
+            <li class="menu"><a class="btn-6" href="#cast">Cast<span></span></a></li>
+            <li class="menu"><a class="btn-6" href="#room">Room<span></span></a></li>
+            <li class="menu"><a class="btn-6" href="#time">Time<span></span></a></li>
+            <li class="menu"><a class="btn-6" href="#access">Access<span></span></a></li>
         </ul>
         <div class="nav-icon">
-            <div class="sns-box">SNS</div>
+            <div class="btn-6 paw-btn">
+                <div class="sns-box">SNS</div>
                 <a href="https://twitter.com/login?lang=ja"><i class="nav-fab fab fa-twitter"></i></a>
                 <a href="https://www.instagram.com/?hl=ja"><i class="nav-fab fab fa-instagram"></i></a>
                 <a href="https://www.youtube.com/"><i class="nav-fab fab fa-youtube"></i></a>
+                <span></span>
+        </div>
         </div>
         <img src="images/kitten-1531753_1280.png" class="nav-cat">
     </nav>
-    <div class="follower"></div>
+    <i class="fas fa-paw"></i>
+    <div class="follower">
+    </div>
     <div class="wrap-1" id="top">
         <div class="top-text">
-        <h1>Sample Site CatCafe</h1>
-        <p>当Webサイトはサンプルとして作られた、<br>架空の猫カフェ紹介サイトです。</p>
+            <h1>Sample Site CatCafe</h1>
+            <p>当Webサイトはサンプルとして作られた、<br>架空の猫カフェ紹介サイトです。</p>
         </div>
         <div class="slide-content">
-                <div class="slide-wrap">
+            <div class="slide-wrap">
                 <div class="slide-img slide-1"></div>
                 <div class="slide-img slide-2"></div>
                 <div class="slide-img slide-3"></div>
                 <video class="video slide-img" id="video" src="images/catvideo2.mp4" loop muted>
                 </video>
             </div>
-            </div>
+        </div>
     </div>
 
     <div class="wrap-2" id="cast">
@@ -137,10 +143,10 @@
         </div>
     </div>
     <div class="wrap-3" id="room">
-            <div class="heading-box">
-                    <h2>部屋紹介</h2>
-                    <p class="name">ROOM</p>
-                </div>
+        <div class="heading-box">
+            <h2>部屋紹介</h2>
+            <p class="name">ROOM</p>
+        </div>
         <div class="room-top up-anm">
 
             <img src="images/cat-882049_1280.jpg" class="room-img">

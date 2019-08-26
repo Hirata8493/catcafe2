@@ -158,7 +158,7 @@ $(window).scroll(function () {
     topWindow = $(window).scrollTop();
   $('.gray').each(function () {
     var targetPosition = $(this).offset().top;
-    if (topWindow > targetPosition - windowHeight + 100) {
+    if (topWindow > targetPosition - windowHeight + 0) {
       $(this).addClass("gray-anm");
     }
   });
@@ -192,7 +192,7 @@ $(window).scroll(function () {
     topWindow = $(window).scrollTop();
   $('.table').each(function () {
     var targetPosition = $(this).offset().top;
-    if (topWindow > targetPosition - windowHeight + 100) {
+    if (topWindow > targetPosition - windowHeight + 0) {
       $(this).addClass("table-anm");
     }
   });
@@ -203,7 +203,7 @@ $(window).scroll(function () {
     topWindow = $(window).scrollTop();
   $('.up-anm').each(function () {
     var targetPosition = $(this).offset().top;
-    if (topWindow > targetPosition - windowHeight + 100) {
+    if (topWindow > targetPosition - windowHeight + 0) {
       $(this).addClass("up-anm2");
     }
   });
@@ -214,7 +214,7 @@ $(window).scroll(function () {
     topWindow = $(window).scrollTop();
   $('.slide-left-anm').each(function () {
     var targetPosition = $(this).offset().top;
-    if (topWindow > targetPosition - windowHeight + 50) {
+    if (topWindow > targetPosition - windowHeight + 0) {
       $(this).addClass("slide-left-anm2");
     }
   });
@@ -225,7 +225,7 @@ $(window).scroll(function () {
     topWindow = $(window).scrollTop();
   $('.slide-right-anm').each(function () {
     var targetPosition = $(this).offset().top;
-    if (topWindow > targetPosition - windowHeight + 50) {
+    if (topWindow > targetPosition - windowHeight + 0) {
       $(this).addClass("slide-right-anm2");
     }
   });
@@ -236,7 +236,7 @@ $(window).scroll(function () {
     topWindow = $(window).scrollTop();
   $('.slide-right-anm-2').each(function () {
     var targetPosition = $(this).offset().top;
-    if (topWindow > targetPosition - windowHeight + 50) {
+    if (topWindow > targetPosition - windowHeight + 0) {
       $(this).addClass("slide-right-anm2-2");
     }
   });

@@ -411,7 +411,6 @@ ul {
     right: 0;
     margin: 0 auto;
     position: relative;
-    border: 1px solid dimgray;
 }
 
 .slide-img {
@@ -496,7 +495,6 @@ ul {
 .cat-img {
     position: relative;
     width: 100%;
-    border: 1px solid dimgray;
 }
 
 .nx2 {
@@ -516,7 +514,9 @@ ul {
 }
 
 @keyframes fadeInDown3 {
-    from {}
+    from {
+        transform: translate3d(0, 0, 0);
+    }
     to {
         transform: translate3d(100%, 0, 0);
     }
@@ -565,7 +565,6 @@ ul {
 .room-top {
     width: 70%;
     margin: 20px auto 0;
-    border: 1px solid dimgray;
 }
 
 .room-img {
@@ -594,7 +593,7 @@ ul {
     position: absolute;
     top: -20px;
     right: 5%;
-    border: 1px solid dimgray;
+    
     background-color: #dcdcdc;
     width: 50%;
     padding: 3%;
@@ -632,16 +631,22 @@ ul {
     border-bottom: 3px solid dimgray;
 }
 
-.wrap-b {
+.wrap-4 {
     width: 100vw;
     height: auto;
-    background-color: #696969;
+    text-align: center;
+    
+    color: black;
+    position: relative;
+}
+.back-paw{
+    position: absolute;
+    height: 100%;
+    width: 100%;
     background-image: url("/CatCafe2/images/footprints-309158_1280.png");
     background-size: 20%;
-    text-align: center;
-    padding-top: 3%;
+    opacity: 0.1;
 }
-
 .wrap-time {
     display: flex;
     flex-wrap: wrap;
@@ -649,7 +654,7 @@ ul {
 }
 
 .time h3 {
-    color: #fff;
+    
     font-size: 25px;
 }
 
@@ -671,21 +676,18 @@ table {
     margin: 0 auto 30px;
 }
 
-.table {
-    color: #fff;
-}
 
 .table th {
-    border: 2px solid #fff;
+    border: 2px solid black;
 }
 
 .table td {
-    border: 2px solid #fff;
+    border: 2px solid black;
 }
 
 .shop {
-    color: #fff;
-    border: 2px solid #fff;
+    color: black;
+    border: 2px solid black;
     width: 70%;
     padding: 0 5% 5%;
     margin: 0 auto 5%;
@@ -699,7 +701,7 @@ table {
 
 .shop h2 {
     font-size: 20px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
     margin-bottom: 20px;
 }
 
@@ -801,7 +803,7 @@ table {
     animation-name: gray-anm;
     animation-duration: 1s;
     visibility: visible !important;
-    background-color: #a9a9a9;
+    background-color: #F7F6F2;
     animation-fill-mode: forwards;
 }
 
@@ -849,7 +851,7 @@ table {
 }
 
 .wrap-map {
-    padding-bottom: 5%;
+    margin-bottom: 5%;
 }
 
 .access {
@@ -858,8 +860,7 @@ table {
     margin: 5% 10%;
     text-align: left;
     padding-left: 5%;
-    color: white;
-    border-left: 3px solid white;
+    border-left: 3px solid black;
 }
 
 .map {
@@ -868,11 +869,11 @@ table {
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    border: 2px solid white;
 }
 
 iframe {
     vertical-align: bottom;
+    padding-bottom: 5%;
 }
 
 footer {
@@ -902,7 +903,7 @@ footer {
     text-decoration: none;
     text-align: center;
     transition: .3s;
-    box-shadow: 0px 10px 10px 5px rgba(220, 220, 220);
+    box-shadow: 0px 8px 8px 5px rgba(220, 220, 220,0.6);
     margin: 0 8px;
 }
 
@@ -977,10 +978,6 @@ footer {
         font-size: 40px;
         right: 3%;
         width: 25%;
-        
-        
-        
-        
     }
     .nav-fab {
         width: auto;
@@ -1013,6 +1010,7 @@ footer {
         height: 200px;
         width: 80%;
         margin: 0 auto;
+        
     }
     .access {
         position: absolute;
@@ -1047,6 +1045,11 @@ footer {
     }
     .nav-wrap {
         font-size: 30px;
+    }
+    .sns-icon{
+        height: 80px;
+        width: 80px;
+        line-height: 80px;
     }
 }
 
@@ -1106,4 +1109,9 @@ footer {
 
 .btn-6:active {
     background-color: #b6a184;
+}
+@media screen and (max-width: 1024px) { 
+    .cursor{
+        display: none;
+    }
 }

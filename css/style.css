@@ -96,7 +96,7 @@ body {
 
 .under {
     position: fixed;
-    top: 50%;
+    top: 50vh;
     left: 0;
     width: 100vw;
     height: 50vh;

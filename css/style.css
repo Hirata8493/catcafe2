@@ -421,6 +421,7 @@ ul {
     background-position: center;
     animation-name: slide-1;
     animation-duration: 7s;
+    animation-fill-mode: forwards;
 }
 
 .slide-1 {

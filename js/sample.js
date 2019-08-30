@@ -35,12 +35,12 @@ window.onload = function () {
   setTimeout(function () {
     element.classList.add("top-2");
     under.classList.add("under-2");
-  }, 2000); // 2秒後に実行
+  }, 1000); // 1秒後に実行
   setTimeout(function () {
     element.classList.add("none");
     under.classList.add("none");
     scroll.classList.add("no-scroll-2");
-  }, 3000); // 3秒後に実行
+  }, 2000); // 2秒後に実行
 }
 $(function () {
   var countElm = $('.count'),

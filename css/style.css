@@ -59,7 +59,7 @@ body {
     background: black;
     transform: scale(0, 1);
     transform-origin: left top;
-    transition: transform 2s;
+    transition: transform 1s;
 }
 
 .load-2 {
@@ -393,7 +393,9 @@ ul {
     text-align: center;
     margin-bottom: 3%;
 }
-
+.top-img{
+    display: none;
+}
 /*スライドする複数イメージをぴったりと重ねます*/
 
 .slide-content {
@@ -403,7 +405,7 @@ ul {
 
 .slide-wrap {
     height: 65vh;
-    width: 80vw;
+    width: 100vw;
     overflow: hidden;
     position: absolute;
     top: 0;
@@ -416,7 +418,7 @@ ul {
 .slide-img {
     position: absolute;
     height: 100%;
-    width: 100vw;
+    width: 120vw;
     background-size: cover;
     background-position: center;
     animation-name: slide-1;
@@ -453,11 +455,11 @@ ul {
 @media screen and (min-width:820px) {
     .slide-wrap {
         height: 65vh;
-        width: 70vw;
+        /* width: 70vw; */
     }
-    .slide-img {
+    /* .slide-img {
         width: 80vw;
-    }
+    } */
 }
 
 .wrap-2 {
@@ -500,11 +502,12 @@ ul {
 
 .nx2 {
     position: absolute;
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     background-color: #F7F6F2;
+    content: '';
 }
 
 .anm-2 {
@@ -512,6 +515,7 @@ ul {
     animation-duration: 1s;
     visibility: visible !important;
     animation-fill-mode: forwards;
+    background-color: #F7F6F2;
 }
 
 @keyframes fadeInDown3 {
@@ -1113,5 +1117,31 @@ footer {
 @media screen and (max-width: 1024px) { 
     .cursor{
         display: none;
+    }
+}
+@media screen and (min-width: 1024px) { 
+    .wrap-1{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+    }
+    .top-text {
+        margin-bottom: 0;
+        margin-top: 50px;
+        padding: auto;
+    }
+    .slide-wrap {
+        margin: 0 0 0 auto;
+        width: 70vw;
+    }
+    .top-img{
+        display: block;
+        width: 90%;
+        margin-right: 10%;
+        margin-top: 50px;
+        
+    }
+    .slide-img {
+        width: 80vw;
     }
 }

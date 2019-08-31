@@ -143,7 +143,7 @@ $(".btn-6").on({
     offset = 0;
     cursor.addClass("paw-active2");
     follower.addClass("paw-active");
-    
+
   },
   "mouseleave": function () {
     offset = 1000;
@@ -262,19 +262,48 @@ $(window).scroll(function () {
   });
 });
 
-$(function() {  
+$(function () {
   $('.btn-6')
-    .on('mouseenter', function(e) {
-            var parentOffset = $(this).offset(),
-            relX = e.pageX - parentOffset.left,
-            relY = e.pageY - parentOffset.top;
-            $(this).find('span').css({top:relY, left:relX})
+    .on('mouseenter', function (e) {
+      var parentOffset = $(this).offset(),
+        relX = e.pageX - parentOffset.left,
+        relY = e.pageY - parentOffset.top;
+      $(this).find('span').css({ top: relY, left: relX })
     })
-    .on('mouseout', function(e) {
-            var parentOffset = $(this).offset(),
-            relX = e.pageX - parentOffset.left,
-            relY = e.pageY - parentOffset.top;
-        $(this).find('span').css({top:relY, left:relX})
+    .on('mouseout', function (e) {
+      var parentOffset = $(this).offset(),
+        relX = e.pageX - parentOffset.left,
+        relY = e.pageY - parentOffset.top;
+      $(this).find('span').css({ top: relY, left: relX })
     });
   // $('[href=#]').click(function(){return false});
+});
+
+$(function () {
+
+  // 要素をクリックしたら発動
+  $('.popup-images').on('click', function () {
+
+    // 引数にthisを指定し、クリックした順番を変数に格納
+    var i = $('.popup-images').index(this);
+    $('.popup').addClass('popup-on');
+    $('.popup-wrap').addClass('popup-on');
+    // 順番を表示
+    $('.popup-img').eq(i).addClass('popup-on');
+
+  });
+  $('.popup-images').last().on('click', function () {
+    $('.cross').addClass('black');
+  });
+  $('.popup-wrap').on('click', function () {
+
+    // 引数にthisを指定し、クリックした順番を変数に格納
+    var i = $('.popup-images').index(this);
+    $('.popup').removeClass('popup-on');
+    $('.popup-wrap').removeClass('popup-on');
+    // 順番を表示
+    $('.popup-img').removeClass('popup-on');
+    $('.cross').removeClass('black');
+  });
+
 });

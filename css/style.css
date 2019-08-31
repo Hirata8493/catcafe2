@@ -172,7 +172,6 @@ body {
 
 .color-2 {
     transform: scale(1000);
-    
 }
 
 ul {
@@ -225,7 +224,6 @@ ul {
 
 .open {
     visibility: visible;
-    
 }
 
 .nav-2 {
@@ -242,13 +240,14 @@ ul {
     transform: translateX(100%);
     opacity: 0;
     color: #6e5f44;
-    
     font-size: 30px;
 }
-.paw-btn{
+
+.paw-btn {
     width: 100%;
     height: auto;
 }
+
 .sns-box {
     font-size: 20px;
 }
@@ -342,7 +341,6 @@ ul {
     transform: scale(0);
 }
 
-
 .follower {
     display: flex;
     justify-content: center;
@@ -376,12 +374,71 @@ ul {
     font-size: 25px;
     z-index: 1001;
 }
-.paw-active{
+
+.paw-active {
     -webkit-transform: scale(0);
     transform: scale(0);
 }
-.paw-active2{
+
+.paw-active2 {
     opacity: 1;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    margin: auto;
+    width: 80vw;
+    height: 50vh;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0,0.8);
+    background-color: white;
+    overflow-y: scroll;
+    border: 6px solid white;
+    display: none;
+}
+.cross{
+    position: fixed;
+    
+    margin-left: 10px;
+    
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    
+}
+.black{
+    color: black;
+}
+.popup-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+.popup-img{
+    width: 100%;
+    display: none;
+}
+.popup-images{
+    cursor: pointer;
+}
+.popup-text{
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 50%;
+    margin: 50px auto;
+}
+.popup-on{
+    display: block;
 }
 .wrap-1 {
     height: auto;
@@ -393,9 +450,11 @@ ul {
     text-align: center;
     margin-bottom: 3%;
 }
-.top-img{
+
+.top-img {
     display: none;
 }
+
 /*スライドする複数イメージをぴったりと重ねます*/
 
 .slide-content {
@@ -598,7 +657,6 @@ ul {
     position: absolute;
     top: -20px;
     right: 5%;
-    
     background-color: #dcdcdc;
     width: 50%;
     padding: 3%;
@@ -640,11 +698,11 @@ ul {
     width: 100vw;
     height: auto;
     text-align: center;
-    
     color: black;
     position: relative;
 }
-.back-paw{
+
+.back-paw {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -652,6 +710,7 @@ ul {
     background-size: 20%;
     opacity: 0.1;
 }
+
 .wrap-time {
     display: flex;
     flex-wrap: wrap;
@@ -659,7 +718,6 @@ ul {
 }
 
 .time h3 {
-    
     font-size: 25px;
 }
 
@@ -680,7 +738,6 @@ table {
     width: 100%;
     margin: 0 auto 30px;
 }
-
 
 .table th {
     border: 2px solid black;
@@ -907,7 +964,7 @@ footer {
     text-decoration: none;
     text-align: center;
     transition: .3s;
-    box-shadow: 0px 8px 8px 5px rgba(220, 220, 220,0.6);
+    box-shadow: 0px 8px 8px 5px rgba(220, 220, 220, 0.6);
     margin: 0 8px;
 }
 
@@ -977,7 +1034,6 @@ footer {
         width: 40%;
         margin: 5% 2%;
     }
-    
     .nav-icon {
         font-size: 40px;
         right: 3%;
@@ -986,9 +1042,8 @@ footer {
     .nav-fab {
         width: auto;
         margin: 0 3%;
-        
     }
-    .paw-btn{
+    .paw-btn {
         padding: 10% 0;
     }
     .anm-delay2 {
@@ -1014,7 +1069,6 @@ footer {
         height: 200px;
         width: 80%;
         margin: 0 auto;
-        
     }
     .access {
         position: absolute;
@@ -1050,7 +1104,7 @@ footer {
     .nav-wrap {
         font-size: 30px;
     }
-    .sns-icon{
+    .sns-icon {
         height: 80px;
         width: 80px;
         line-height: 80px;
@@ -1072,22 +1126,12 @@ footer {
     color: black;
 }
 
-
-
-
 .btn-6 {
     position: relative;
     display: block;
     overflow: hidden;
-    
-    
-    
-    
-    
     border: 1px solid dimgray;
 }
-
-
 
 .btn-6 span {
     position: absolute;
@@ -1114,13 +1158,15 @@ footer {
 .btn-6:active {
     background-color: #b6a184;
 }
-@media screen and (max-width: 1024px) { 
-    .cursor{
+
+@media screen and (max-width: 1024px) {
+    .cursor {
         display: none;
     }
 }
-@media screen and (min-width: 1024px) { 
-    .wrap-1{
+
+@media screen and (min-width: 1030px) {
+    .wrap-1 {
         display: flex;
         justify-content: space-between;
         margin-top: 80px;
@@ -1134,14 +1180,20 @@ footer {
         margin: 0 0 0 auto;
         width: 70vw;
     }
-    .top-img{
+    .top-img {
         display: block;
         width: 90%;
         margin-right: 10%;
         margin-top: 50px;
-        
     }
     .slide-img {
         width: 80vw;
+    }
+    .popup {
+        height: 70vh;
+        width: 60vw;
+    }
+    .popup-text{
+        font-size: 20px;
     }
 }
